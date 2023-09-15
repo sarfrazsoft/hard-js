@@ -1,3 +1,6 @@
+// Q3: Difference between function statement and expression
+// The major difference between these two lies in Hoisting.
+
 a(); // "Hello A"
 b(); // TypeError
 function a() {
@@ -10,3 +13,4 @@ console.log("Hello B");
 // function assigned to a. But b is created like a variable (b: undefined)
 // and until code reaches the function() part, it is still undefined. So, it
 // cannot be called
+
