@@ -1,3 +1,59 @@
+// Pure Functions //
+
+A pure function is a fundamental concept in functional programming. It's a type of function that has two key characteristics:
+
+1. **Deterministic**: Given the same input, a pure function will always produce the same output. There are no hidden dependencies or side effects.
+
+2. **No Side Effects**: A pure function doesn't modify any data outside its scope. It doesn't change any variables, objects, or data structures in the surrounding environment, and it doesn't perform any observable actions, such as writing to the console, making network requests, or modifying the DOM.
+
+Here's an example of a pure function:
+
+```javascript
+function add(a, b) {
+  return a + b;
+}
+
+const result = add(3, 4); // The result will always be 7
+```
+
+In this example, the `add` function is pure because:
+
+- It takes two arguments (`a` and `b`).
+- It performs a deterministic operation (addition).
+- It returns a result based solely on its input.
+
+Here's an example of a non-pure function:
+
+```javascript
+let total = 0;
+
+function addToTotal(number) {
+  total += number;
+}
+
+addToTotal(5); // Modifies the external variable 'total'
+```
+
+In this example, the `addToTotal` function is not pure because:
+
+- It modifies an external variable (`total`).
+- Its behavior is not deterministic; the result depends on the current state of `total`.
+
+Pure functions have several important advantages:
+
+1. **Predictability**: Since pure functions always produce the same output for the same input, they are predictable and easy to reason about, which helps in debugging and understanding code.
+
+2. **Testability**: Pure functions are easy to test because you can isolate them from the rest of your code. You don't need to worry about setting up a complex environment or dealing with side effects when testing them.
+
+3. **Concurrency**: In a concurrent or parallel programming environment, pure functions are inherently thread-safe because they don't rely on shared state.
+
+4. **Memoization**: You can cache the results of pure function calls, which can lead to performance optimizations in scenarios where the same input is provided multiple times.
+
+5. **Functional Programming**: Pure functions are a fundamental concept in functional programming, and writing code in a functional style often leads to cleaner, more maintainable code.
+
+While it's not always possible or practical to make every function pure (as some functions need to have side effects), following the principle of pure functions whenever feasible can lead to more reliable and maintainable code.
+
+
 // Q3: Difference between function statement and expression
 // The major difference between these two lies in Hoisting.
 
