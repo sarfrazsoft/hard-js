@@ -1,3 +1,13 @@
+// Class Hoisting //
+Unlike functions, and other JavaScript declarations, class declarations are not hoisted.
+That means that you must declare a class before you can use it
+Ref: https://www.w3schools.com/js/js_class_inheritance.asp
+
+
+// Static class methods are defined on the class itself. //
+You cannot call a static method on an object, only on an object class.
+Ref: https://www.w3schools.com/js/js_class_static.asp
+
 // Pure Functions //
 
 A pure function is a fundamental concept in functional programming. It's a type of function that has two key characteristics:
