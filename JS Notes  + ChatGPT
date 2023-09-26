@@ -1,3 +1,36 @@
+// this keyword in arrow functions//
+
+In JavaScript, the `this` keyword behaves differently in arrow functions compared to regular functions. Understanding how `this` works in arrow functions is important because it can lead to different behavior and potential issues. Here's what `this` means in arrow functions:
+
+**Arrow functions do not have their own `this` context.** Instead, they inherit the `this` value from their surrounding (lexical) context. This behavior is sometimes referred to as "lexical scoping" or "lexical `this`."
+
+In contrast, regular (non-arrow) functions have their own `this` context, which is dynamically determined when the function is called. This dynamic behavior can lead to `this` referring to different objects depending on how the function is invoked.
+
+Here's an example to illustrate the difference between arrow functions and regular functions with regard to `this`:
+
+```javascript
+const obj = {
+  name: "John",
+  sayHello: function() {
+    console.log(`Hello, ${this.name}!`);
+  },
+  sayHelloArrow: () => {
+    console.log(`Hello, ${this.name}!`); // Arrow function
+  }
+};
+
+obj.sayHello();        // Output: Hello, John!
+obj.sayHelloArrow();   // Output: Hello, undefined!
+```
+
+In the `sayHello` method (a regular function), `this` refers to the `obj` object because it's called as a method of `obj`.
+
+In the `sayHelloArrow` method (an arrow function), `this` does not have its own context, so it inherits the `this` value from the surrounding context, which is the global context in this case. As a result, `this.name` is undefined, and it does not refer to the `name` property of the `obj` object.
+
+In practical terms, arrow functions are often used when you want to preserve the `this` context from an enclosing scope, such as in callbacks or when defining methods in ES6 classes. Regular functions, on the other hand, have their own `this` context, which can be advantageous in certain situations where you need dynamic context binding.
+
+It's essential to be aware of the behavior of `this` in arrow functions to avoid unexpected issues and ensure that it behaves as expected in your code.
+
 // Class Hoisting //
 Unlike functions, and other JavaScript declarations, class declarations are not hoisted.
 That means that you must declare a class before you can use it
