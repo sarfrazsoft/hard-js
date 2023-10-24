@@ -1,3 +1,6 @@
+//--- Type of an array in JS is an object ---//
+
+
 //---js shallow copy vs deep copy---//
 
 There are two ways to clone an object in Javascript: Shallow copy: means that only the first level of the object is copied. Deeper levels are referenced. Deep copy: means that all levels of the object are copied.
