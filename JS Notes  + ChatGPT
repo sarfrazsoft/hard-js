@@ -1,3 +1,13 @@
+//--- let vs var vs const ---//
+in global context
+-- var can be declared and accessed without initilization
+-- let can be declared and but can not be accessed without initilization
+-- const has to declared and initialized in a single line/statement
+
+in block context
+-- let and const are BLOCK SCOPED i.e. in a separate memory space which is reserved for this block
+-- var is GLOBAL SCOPED i.e. can be accessed anywhere
+
 //--- Functions ---//
 -- function definitaion is of two types: function declaration vs function statement(assigning an anonymous function to a variable)
 -- we can access function arguments using arguments array
