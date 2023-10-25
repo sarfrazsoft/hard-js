@@ -1,4 +1,9 @@
-//--- Type of an array in JS is an object ---//
+//--- Enumerative For Loops ---//
+JS has two types of loops 1) Sequential Loop 2) Enumerative Loop
+Enumerative Loops are of two types: 1) for in 2) for of 
+
+
+//--- Type of an array in JS is "object" ---//
 
 
 //---js shallow copy vs deep copy---//
