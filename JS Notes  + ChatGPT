@@ -1,6 +1,7 @@
 //--- Functions ---//
 -- function definitaion is of two types: function declaration vs function statement(assigning an anonymous function to a variable)
 -- we can access function arguments using arguments array
+-- Functions are objects: that's why they can be assigned to other variables and can be passed as arguments
 
 //--- Set and Map in JS ---//
 Set: unique values
