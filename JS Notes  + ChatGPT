@@ -1,10 +1,8 @@
 //--- Set and Map in JS ---//
 Set: unique values
-mySet.add("shoes");
-mySet.has("shoes") === tue ;
+Map: preserves order of insertion
 
-Map: remembers order of insertion
-
+A while loop is better than a for loop if you do not know how many times you have to loop.
 
 
 //--- Enumerative For Loops ---//
