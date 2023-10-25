@@ -1,12 +1,24 @@
 //--- let vs var vs const ---//
-in global context
+in global context/scope
 -- var can be declared and accessed without initilization
 -- let can be declared and but can not be accessed without initilization
 -- const has to declared and initialized in a single line/statement
 
-in block context
+in block context/scope
 -- let and const are BLOCK SCOPED i.e. in a separate memory space which is reserved for this block
 -- var is GLOBAL SCOPED i.e. can be accessed anywhere
+
+in function context/scope
+-- var is function-scoped. They are accessible only within the function.
+-- let or const inside a function are block-scoped. This means they are accessible only within the block.
+
+In summary:
+-- var has function or global scope but does not have block scope.
+-- let and const have block scope, making them more suitable for avoiding variable hoisting and unexpected behavior in blocks.
+-- Global scope applies to variables declared outside functions and blocks for all three types (var, let, and const).
+-- Use let and const for block-scoped variables and when you want to avoid variable hoisting issues. Use var for function-scoped or global 
+variables if there's a specific need for such behavior, although this usage is becoming less common in modern JavaScript.
+
 
 //--- Functions ---//
 -- function definitaion is of two types: function declaration vs function statement(assigning an anonymous function to a variable)
