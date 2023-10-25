@@ -24,6 +24,8 @@ variables if there's a specific need for such behavior, although this usage is b
 -- function definitaion is of two types: function declaration vs function statement(assigning an anonymous function to a variable)
 -- we can access function arguments using arguments array
 -- Functions are objects: that's why they can be assigned to other variables and can be passed as arguments
+-- The term "first-class citizen" implies that functions are given the same status as other data types in the language, and they can be used in all the ways that other data types can be used.
+i.e. they can be passed as arguments, can be saved in objects or arrays etc
 
 //--- Set and Map in JS ---//
 Set: unique values
