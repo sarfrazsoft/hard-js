@@ -1,3 +1,7 @@
+JavaScript is synchronous, blocking and single-threaded. This means that the JavaScript engine executes our program sequentially, one line at a time from top to bottom in the exact order of the statements. 
+The critical point is that while JavaScript is single-threaded, it leverages the runtime environment's capabilities for I/O operations and employs mechanisms like the event loop, callbacks, and microtasks 
+to handle asynchronous tasks without blocking the main thread. This allows for responsive, non-blocking applications.
+
 //--- let vs var vs const ---//
 in global context/scope
 -- var can be declared and accessed without initilization
